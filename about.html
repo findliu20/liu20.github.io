@@ -1,0 +1,623 @@
+F<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+      <!--new testimonial -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Untitled</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+      <!-- autohide nav bar -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(){
+    
+    el_autohide = document.querySelector('.autohide');
+    
+    // add padding-top to bady (if necessary)
+    navbar_height = document.querySelector('.navbar').offsetHeight;
+    document.body.style.paddingTop = navbar_height + 'px';
+
+    if(el_autohide){
+      
+      var last_scroll_top = 0;
+      window.addEventListener('scroll', function() {
+            let scroll_top = window.scrollY;
+           if(scroll_top < last_scroll_top) {
+                el_autohide.classList.remove('scrolled-down');
+                el_autohide.classList.add('scrolled-up');
+            }
+            else {
+                el_autohide.classList.remove('scrolled-up');
+                el_autohide.classList.add('scrolled-down');
+            }
+            last_scroll_top = scroll_top;
+
+      }); 
+      // window.addEventListener
+
+    }
+    // if
+    
+  }); 
+  // DOMContentLoaded  end
+
+
+</script>
+
+<!-- footer -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+
+
+       
+
+      <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+
+
+        /* Meet the team */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container1 {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container1::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  opacity: 50%;
+  background-color: none;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+    </style>
+
+    <style type="text/css">
+     .testimonials-clean {
+  color:#313437;
+  background-color:#E4E1DC;
+}
+
+.testimonials-clean p {
+  color:#7d8285;
+}
+
+.testimonials-clean h2 {
+  font-weight:bold;
+  margin-bottom:20px;
+  padding-top:30px;
+  color:grey;
+}
+
+@media (max-width:767px) {
+  .testimonials-clean h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.testimonials-clean .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.testimonials-clean .intro p {
+  margin-bottom:0;
+}
+
+.testimonials-clean .people {
+  padding:50px 0 20px;
+}
+
+.testimonials-clean .item {
+  margin-bottom:32px;
+}
+
+@media (min-width:768px) {
+  .testimonials-clean .item {
+    height:220px;
+  }
+}
+
+.testimonials-clean .item .box {
+  padding:30px;
+  background-color:#fff;
+  opacity: 60%;
+  position:relative;
+}
+
+.testimonials-clean .item .box:after {
+  content:'';
+  position:absolute;
+  left:30px;
+  bottom:-24px;
+  width:0;
+  height:0;
+  border:15px solid transparent;
+  border-width:12px 15px;
+  border-top-color:#fff;
+}
+
+.testimonials-clean .item .author {
+  margin-top:32px;
+  padding-left:25px;
+}
+
+.testimonials-clean .item .name {
+  font-weight:bold;
+  margin-bottom:2px;
+  color:inherit;
+}
+
+.testimonials-clean .item .title {
+  font-size:13px;
+  color:black;
+  opacity: 40%;
+}
+
+.testimonials-clean .item .description {
+  font-size:14px;
+  font-weight:lighter ;
+  color: black;
+  margin-bottom:0;
+}
+
+.testimonials-clean .item img {
+  max-width:40px;
+  float:left;
+  margin-right:12px;
+  margin-top:1px;
+} 
+
+
+    </style>
+
+
+
+    <style type="text/css">
+  .autohide{
+    position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1030;
+
+  }
+  .scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+
+  </style>
+
+  <!-- footer -->
+
+  <style type="text/css">
+  /*FOOTER*/
+
+footer {
+  background: #E4E1DC;
+  color: white;
+  margin-top:100px;
+  width: 100%;
+  position: absolute;
+  bottom: -2000px;
+  left: 0;
+}
+
+footer a {
+  color: black;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: grey;
+  opacity: 70%;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid grey;
+  opacity: 50%;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: grey;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #EEECE6;
+}
+
+    
+
+  </style>
+
+
+
+    
+
+  <body style="background-color:#EFECE6";>
+    <nav class="autohide navbar navbar-expand-lg navbar-light " style="background-color: white;">
+ <div class="container-fluid">
+   <a class="navbar-brand" href="practice_2.html">
+    <img src="image/15.jpg" style="width:200px;">
+   </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link" href="index.html" style="margin-right: 40px;" > Home </a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html" style="margin-right: 40px;"> About us </a></li>
+    <li class="nav-item"><a class="nav-link" href="gallery.html" style="margin-right: 40px;"> Gallery </a></li>
+    <li class="nav-item"><a class="nav-link" href="contact.html" style="margin-right: 20px;"> Contact us</a></li>
+    
+  </ul>
+
+  </div> <!-- navbar-collapse.// -->
+ </div> <!-- container-fluid.// -->
+</nav>
+
+
+    <!-- NEW SECTION -->
+
+
+    <!--<section>
+
+      <br><br>
+      <h1 style="text-align: center; font-size: 300%; font-family: Big Caslon; padding-top: 20px; color: black; opacity: 70% ;"> About us</h1>
+      <br><br> 
+    -->
+
+
+    <br><br><br>
+    <div class="container" >    <!-- my container tag -->
+      <div class="row">  <!-- my first row-->
+        <div class="col-md-6" style="text-align: center;margin-left: -23px;"> <!--coliumn-->
+          <img src="image/16.jpg" alt="New York" width="533px" height="666px">
+        </div>
+        <div class="col-md-6" style="text-align: center;margin-left: 20px ; "> <!--coliumn-->
+          <h1 style=" text-align:left; font-weight:lighter; font-family: Big Caslon;"> The world outside nourishes the world within.</h1> 
+          <p style="text-align: left; padding-top: 20px; font-weight: lighter;"> Natureofthings is a modern wellness house rooted in the enduring wisdom of nature. We believe that health is harmony. It's synchronicity of body, mind and the natural world. Our ingredients come from the earth – plants, minerals, and elements. Our formulas are equal parts curative and preventive, designed to give you a good today and even better tomorrow. We stand for uncompromising quality, science-backed results and a commitment to total transparency.</p>
+          <h3 style="text-align:left; font-size:14px;font-weight: lighter; padding-top:330px; border-bottom: 1px solid grey ; padding-bottom: 10px;"> DISCOVER MORE ABOUT US</h3>
+        </div>
+
+
+        
+
+    <br><br><br><br>
+    <div >
+    <div style="text-align:center; width: 100%; padding-top: 150px; padding-bottom: 30px; ">
+      <h2 style="font-family: Big Caslon;font-size:270% ;color: black; opacity: 70%; ">Meet Our Team</h2>
+    </div>
+
+    <br>
+
+    <div class="row" style="padding-top: 50px;">
+      <div class="column">
+        <div class="card">
+          <img src="image/13.jpg" alt="Jane" style="width:100%">
+          <div class="container1">
+            <h2 style="padding-top: 20px; font-family: Big Caslon;">Jane Doe</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="image/12.jpg" alt="Mike" style="width:100%">
+          <div class="container1">
+            <h2 style="padding-top: 20px; font-family: Big Caslon;">Mike Ross</h2>
+            <p class="title">Art Director</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <img src="image/14.jpg" alt="John" style="width:100%">
+          <div class="container1">
+            <h2 style="padding-top: 20px; font-family: Big Caslon;">John Doe</h2>
+            <p class="title">Designer</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+      <div style="text-align:center; width: 100%; padding-top: 100px; padding-bottom: 30px; ">
+        <h2 style="font-family: Big Caslon;font-size:270% ;color: black; opacity: 70%; "></h2>
+      </div>
+
+           <div class="testimonials-clean">
+        <div class="container" style="padding: 30px 60px;">
+            <div class="intro">
+                <h2 class="text-center" style="font-family: Big Caslon;font-size:270% ;color: black; opacity: 70%; font-weight: lighter;" >Testimonials </h2>
+
+                <p class="text-center"></p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Our formulas are equal parts curative and preventive, designed to give you a good today and even better tomorrow.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="image/14.jpg">
+                        <h5 class="name">Ben Johnson</h5>
+                        <p class="title">CEO of Company Inc.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">We stand for uncompromising quality, science-backed results and a commitment to total transparency.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="image/14.jpg">
+                        <h5 class="name">Carl Kent</h5>
+                        <p class="title">Founder of Style Co.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">We believe that health is harmony. It's synchronicity of body, mind and the natural world. </p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="image/14.jpg">
+                        <h5 class="name">Emily Clark</h5>
+                        <p class="title">Owner of Creative Ltd.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ <!--footer -->
+        <footer class="mainfooter" role="contentinfo" style="padding:0px 200px ;" >
+          <div class="footer-middle">
+          <div class="container";  >
+            <div class="row" style="padding-bottom: 30px; "  >
+              <div class="col-md-3 col-sm-6">
+                <!--Column1-->
+                <div class="footer-pad">
+                  <h4 style="font-size: 12px;color:grey; letter-spacing: 1px; font-weight: lighter; padding-bottom: 10px">SHOP</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Payment Center</a></li>
+                    <li><a href="#">Contact Directory</a></li>
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="#">News and Updates</a></li>
+                    <li><a href="#">FAQs</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <!--Column1-->
+                <div class="footer-pad">
+                  <h4 style="font-size: 12px;color:grey; letter-spacing: 1px; font-weight: lighter; padding-bottom: 10px">LEARN</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Website Tutorial</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <!--Column1-->
+                <div class="footer-pad">
+                  <h4 style="font-size: 12px;color:grey; letter-spacing: 1px; font-weight: lighter; padding-bottom: 10px">ABOUT</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Parks and Recreation</a></li>
+                    <li><a href="#">Public Works</a></li>
+                    <li><a href="#">Police Department</a></li>
+                    <li><a href="#">Fire</a></li>
+                    <li><a href="#">Mayor and City Council</a></li>
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <h4 style="font-size: 12px;color:grey; letter-spacing: 1px; font-weight: lighter; padding-bottom: 10px">CONNECT</h4>
+                    <ul class="social-network social-circle">
+                     <li><a href="https://www.facebook.com/Buibiboo/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                     <li><a href="https://www.linkedin.com/in/hnh-luu-1a12351ba/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>       
+            </div>
+            </div>
+          <div class="row">
+            <div class="col-md-12 copy">
+              <p class="text-center" style="color: grey">&copy; Copyright 2018 - Company Name.  All rights reserved.</p>
+            </div>
+          </div>
+
+
+          </div>
+          </div>
+        </footer>
+          
+
+
+
+
+        
+
+
+      </div>
+    </section>
+  </body>
+</html>
+
